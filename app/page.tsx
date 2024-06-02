@@ -3,13 +3,15 @@ import { Navbar } from "@/components/navbar/navbar";
 import { Features } from "@/view/home/feature/features";
 import { Hero } from "@/view/home/hero/hero";
 import data from "@/model/data.json";
+import { Gallery } from "@/view/home/gallery/gallery";
 export default async function Home() {
   return (
     <main className="min-h-screen ">
       <div className="flex flex-col gap-10 w-[87%] mx-auto border border-red-500">
         <Navbar />
         <Hero {...data.hero} />
-        <Features />
+        <Features features={data.features} />
+        <Gallery />
       </div>
     </main>
   );
