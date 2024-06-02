@@ -21,7 +21,10 @@ export function Hero({ headline, subheadline, ctaButtons }: IHeroProps) {
           {ctaButtons.map((button, index) => {
             return (
               <ButtonMain
-                className={`${index == 1 ? "bg-transparent text-black" : ""}`}
+                style={{
+                  color: index === 1 ? "black" : "",
+                  backgroundColor: index === 1 ? "transparent" : "",
+                }}
                 key={index}
               >
                 {button.text}
