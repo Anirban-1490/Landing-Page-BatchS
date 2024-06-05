@@ -34,12 +34,15 @@ export function Testimonial({ testimonials }: ITestimonialProps<string>) {
       <h4 className=" mt-12 text-md text-center uppercase tracking-widest text-primary-700">
         testimonial
       </h4>
-      <h2 className="text-4xl text-center capitalize font-extrabold mb-6 max-w-[25%] mx-auto">
+      <h2 className="text-4xl text-center capitalize font-extrabold mb-6 w-fit mx-auto">
         what our users say about us?
       </h2>
 
-      <div className="w-[60%] mx-auto">
-        <NewSwiper swiperProps={{ style: { width: "100%" } }} slides={slides} />
+      <div className="w-[60%] max-lg:w-full mx-auto">
+        <NewSwiper
+          swiperProps={{ style: { maxWidth: "100%" } }}
+          slides={slides}
+        />
       </div>
     </section>
   );

@@ -13,15 +13,23 @@ const config: Config = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "download-banner": "url('/images/download-banner.png')",
+        "gradient-grey":
+          "linear-gradient(to left , transparent, #696969 ,transparent)",
+      },
+      colors: {
+        primary: {
+          700: "#ff5555",
+        },
       },
     },
     fontSize: {
-      sm: "0.8rem",
+      sm: "0.6rem",
       base: "1rem",
       md: "1.15rem",
       xl: "1.25rem",
-      "2xl": "1.563rem",
-      "3xl": "1.953rem",
+      "2xl": "1.7rem",
+      "3xl": "2rem",
       "4xl": "3rem",
       "5xl": "4rem",
     },

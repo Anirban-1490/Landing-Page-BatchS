@@ -11,6 +11,24 @@
         "text": "Learn More",
         "link": "#features"
       }
+    ],
+    "images": [
+      {
+        "url": "/images/hero/phone-1.png",
+        "className": "  z-30"
+      },
+      {
+        "url": "/images/hero/phone-2.png",
+        "className": " left-[6.5rem] top-[4rem] z-20"
+      },
+      {
+        "url": "/images/hero/phone-1.png",
+        "className": "  left-[12.5rem] top-[6rem] z-10"
+      },
+      {
+        "url": "/images/hero/ellipse-1.png",
+        "className": "   left-[5rem] top-[0rem]"
+      }
     ]
   },
   "features": [

@@ -13,21 +13,19 @@ interface IPricingProps<T> {
 export function Pricing({ plans }: IPricingProps<string>) {
   return (
     <section>
-      <div className="max-w-[70%] mx-auto">
-        <h4 className=" mt-12 text-md text-center uppercase tracking-widest text-primary-700">
+      <div className="max-w-[70%] max-md:max-w-full mx-auto text-center">
+        <h4 className=" mt-12 text-md  uppercase tracking-widest text-primary-700">
           Pricing
         </h4>
-        <h2 className="text-4xl text-center capitalize font-extrabold mb-6 mx-auto">
+        <h2 className="text-4xl capitalize font-extrabold mb-6 mx-auto">
           see our best deal
         </h2>
-        <p className=" text-md">
+        <p className=" text-md ">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quibusdam
           quae doloremque dicta sapiente corrupti sint, saepe sunt ratione?
-          Atque exercitationem reprehenderit sapiente quis blanditiis officia
-          consequuntur sequi dignissimos porro.
         </p>
       </div>
-      <div className="my-10 flex justify-center gap-10">
+      <div className="my-10 flex max-md:flex-col max-md:items-center justify-center gap-10">
         {plans.map((plan) => {
           const planStyle =
             plan.id == 1
@@ -69,7 +67,7 @@ export function Pricing({ plans }: IPricingProps<string>) {
                 </ul>
                 <ButtonMain
                   className={`${planStyle.bgColor} capitalize`}
-                  style={{ width: "100%" }}
+                  style={{ width: "100%", height: "2.7rem" }}
                 >
                   purchase plan
                 </ButtonMain>

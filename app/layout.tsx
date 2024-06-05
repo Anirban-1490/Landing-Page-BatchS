@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Fira_Sans, Inter } from "next/font/google";
 import "./globals.css";
 
-const inter = Fira_Sans({ subsets: ["latin"], weight: "500" });
+const inter = Fira_Sans({ subsets: ["latin"], weight: ["500", "300", "400"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
